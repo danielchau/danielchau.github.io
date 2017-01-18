@@ -1,0 +1,126 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background-color: #F7F7F7;
+  height: 100%;
+  position: absolute;
+  min-width: 0px;
+  width: 100%;
+}
+
+.homepage-icon img {
+  max-width: 200px;
+  position: relative;
+  margin-top: 110px;
+}
+
+.navbar img {
+  max-width: 80px;
+  position: relative;
+  margin-top: 110px;
+}
+
+.homepage-links {
+  font-family: "Open Sans";
+  line-height: 200%;
+  margin-top: 12px;
+  color: #808080;
+  font-size: 14px;
+  bottom: 60px;
+  height: 0.75cm;
+}
+
+.homepage-links a{
+  color: #808080;
+}
+
+.homepage-links a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.homepage-links a:link{
+  text-decoration: none;
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+}
+
+.popup img {
+	position: absolute;
+	margin-left: -8px;
+	max-width: 16px;
+	margin-top: 10px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.popup img:hover {
+	opacity: 0.8;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {	
+
+	font-size: 12px;
+    visibility: hidden;
+    width: 800px;
+    color: #000;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1000px){
+	.popup .popuptext {
+		font-size: 10px;
+		width: calc(100vw - 200px);
+		margin-left: calc(-(100vw - 200px)/2);
+	}
+}
+
+@media (max-width: 500px){
+	.popup .popuptext {
+		width: calc(100vw - 100px);
+		margin-left: calc(-(100vw - 100px)/2);
+	}
+}
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.blog-post {
+  text-align: center;
+  width: 100%;
+  padding-right: 500px;
+  padding-left: 500px;
+}
+
+.blog-post h1 {
+	font-size: 17px;
+	color: #000;
+}
+
+.blog-post p {
+	font-size: 12px;
+	color: #808080;
+}
