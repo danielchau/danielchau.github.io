@@ -50,8 +50,7 @@ body {
 }
 
 .popup img {
-	position: absolute;
-	margin-left: -8px;
+	position: static;
 	max-width: 16px;
 	margin-top: 10px;
 	opacity: 0.5;
@@ -66,12 +65,11 @@ body {
 .popup .popuptext {	
 
 	font-size: 12px;
-    visibility: hidden;
+    display: none;
     width: 800px;
     color: #000;
     text-align: center;
-    margin-top: 35px;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 @media (max-width: 1000px){
@@ -92,7 +90,8 @@ body {
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
-    visibility: visible;
+    margin-bottom: 50px;
+    display: inline-block;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 2s;
 }
