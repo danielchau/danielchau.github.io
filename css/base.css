@@ -114,6 +114,21 @@ body {
   padding-left: 500px;
 }
 
+@media (max-width: 1211px){
+  .blog-post{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 600px){
+  .blog-post{
+    padding-right: 50px;
+  padding-left: 50px;
+  }
+}
+
+
 .blog-post h1 {
 	font-size: 17px;
 	color: #000;
